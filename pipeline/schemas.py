@@ -59,7 +59,7 @@ class PatientInput(BaseModel):
             r'\[INST\]',
             r'###\s*instruction',
             r'</?(system|prompt|instruction)\s*>',
-            r'override\s+(all\s+)?',
+            r'override\s+(all\s+)?(previous\s+)?(instructions?|settings?|rules?|prompt|system)',
         ]
         for pattern in banned_patterns:
             if re.search(pattern, v, re.IGNORECASE):
