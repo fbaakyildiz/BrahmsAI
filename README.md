@@ -18,13 +18,11 @@ Clinical decision support prototype for **PCT-guided antibiotic stewardship** us
 - Structured JSON output validation, retry handling, timeouts, and pipeline telemetry.
 - Local-first FastAPI app with a dependency-free single-file frontend.
 
-## Developer Documentation
-
-The design document:
+## Documentation
 
 [docs/DESIGN.md](docs/DESIGN.md)
 
-It covers:
+Contents:
 
 - Runtime architecture
 - API contracts

@@ -30,7 +30,7 @@ Core capabilities:
 ├── runtime.txt                # Python runtime version
 ├── README.md                  # GitHub landing page
 ├── docs/
-│   ├── DESIGN.md              # Developer design document
+│   ├── DESIGN.md              # Design document
 │   ├── archive/               # Archived document exports
 │   └── assets/brand/          # GitHub-facing brand assets
 ├── static/
@@ -69,7 +69,7 @@ flowchart LR
     API --> Browser
 ```
 
-The backend is intentionally thin. `main.py` handles HTTP concerns, static file serving, request validation, and structured error responses. Clinical orchestration and provider calls live in `pipeline/agents.py`.
+`main.py` handles HTTP concerns, static file serving, request validation, and structured error responses. Clinical orchestration and provider calls live in `pipeline/agents.py`.
 
 ## 4. Frontend Design
 
